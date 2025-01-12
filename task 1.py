@@ -6,7 +6,6 @@ def get_days_from_today(date):
         current_day = datetime.today().date()
         return (current_day - string_date).days
     except ValueError:
-        raise ValueError("Неправильний формат дати. Використовуйте формат 'РРРР-ММ-ДД'.")
-
+        return 'Invalid date format'
 print(get_days_from_today("2020-10-09")) 
 print(get_days_from_today("2025-01-01"))
