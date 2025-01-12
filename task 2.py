@@ -4,7 +4,7 @@ def get_numbers_ticket(min, max, quantity):
     result = set()
     while len(result) < quantity:
         result.add(randint(min, max))
-        numbers = sorted(list(result))
+    numbers = sorted(list(result))
     return numbers
 
 
